@@ -77,10 +77,10 @@ function Picture() {
             <img src="/ayo.png" style={{width:'300px', height:'300px' , borderTopLeftRadius:'10px',borderTopRightRadius:'10px'}} alt="" />
         <div style={{ textAlign:'center' , backgroundColor:'#177D72', width:'300px',padding:'12px 12px', color:'white', borderBottomRightRadius:'10px', borderBottomLeftRadius:'10px' }}>
             <div>
-                <h4>Olaitan Tireloluwa</h4>
+                <h4>Odofin Ayomide</h4>
             </div>
             <div>
-                <span>olaitantireloluwa@gmail.com</span>
+                <span>Odofinayomide@gmail.com</span>
             </div>
             <div>
                 <h6>Team Member</h6>
