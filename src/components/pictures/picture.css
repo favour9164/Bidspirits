@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.displaypicture{
+    display:flex;
+    justify-content:'space-around';
+    margin:80px 50px;
+}
+.displaypicture2{
+    display:flex;
+    justify-content:space-evenly;
+    margin:50px 50px
+}
+.team{
+    margin:50px;
+}
+@media screen and (max-width:768px){
+    .displaypicture{
+        flex-direction: column;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        justify-content:'center';
+    }
+    .displaypicture2{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content:'center';
+        gap: 30px;
+    }
+    .team{
+        text-align: center;
+    }
+}

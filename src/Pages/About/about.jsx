@@ -1,3 +1,4 @@
+import Picture from '../../components/pictures/picture';
 import './about.css'
 
 function About() {
@@ -183,6 +184,7 @@ function About() {
         </div>
     </div>
     </div>
+    <Picture />
 </div>
   )
 }

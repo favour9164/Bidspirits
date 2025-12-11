@@ -88,7 +88,48 @@
     margin-top:15%;
 }
 
-/* responsive */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalBox {
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  animation: popIn 0.3s ease-in-out;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.closeModal {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #177D72;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.closeModal:hover {
+  background: #177D72;
+}
 
 @media screen and (max-width: 480px) {
 
@@ -128,18 +169,18 @@
   }
 
   .container {
-    display: flex;       /* IMPORTANT */
+    display: flex;       
     flex-direction: column;
   }
 
   .info {
-    display: flex;       /* IMPORTANT */
+    display: flex;       
     flex-direction: column;
     gap: 20px;
     border: none;
   }
 
-  .Touchs {               /* Fixed class name */
+  .Touchs {               
     text-align: center;
     font-size: large;
   }
@@ -171,16 +212,16 @@
     font-size: small;
   }
   .container {
-    display: flex;       /* IMPORTANT */
+    display: flex;       
     flex-direction: column;
   }
   .info {
-    display: flex;       /* IMPORTANT */
+    display: flex;       
     flex-direction: column;
     gap: 20px;
     border: none;
   }
-.Touchs {               /* Fixed class name */
+.Touchs {               
     text-align: center;
     font-size: large;
   }
@@ -220,7 +261,7 @@
     font-size: large;
   }
   .container {
-    display: flex;       /* IMPORTANT */
+    display: flex;       
     flex-direction: column;
   }
   .touch{

@@ -170,7 +170,18 @@ function Contact() {
   </div>
 
     </div>
- 
+      {message && (
+          <div className="modalOverlay">
+            <div className="modalBox">
+              <h2>Thank You!</h2>
+              <p>Thanks for reaching out. We will get back to you shortly.</p>
+
+              <button className="closeModal" onClick={() => setmessage(false)}>
+                Close
+              </button>
+            </div>
+          </div>
+        )}
     </div>
     </>
   )
