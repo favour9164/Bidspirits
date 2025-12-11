@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contactbackground {
+    background: rgba(23, 125, 115, 0.35);
+    height: 100vh;
+}
+
+.arrowimage{
+    width: 15px;
+    height: 15px;
+}
+.home{
+    color: #05061D;
+    font-size: smaller;
+    font-style: normal;
+    font-style: light;
+    margin-bottom: 80px;
+}
+.notes{
+    width: 430px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.contact{
+    margin-bottom: 20px;
+}
+.email{
+    width: 38px;
+}
+.address{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.alladdress{
+    justify-content: space-evenly;
+}
+.info{
+    display: flex;
+    gap: 20px;
+    border: none;
+    margin: 20px 20px;
+}
+.textinput{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    box-shadow: 0 0 5px white;
+    margin-bottom: 10px;
+}
+.input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    box-shadow: 0 0 5px white;
+    margin-bottom: 10px;
+}
+.name{
+    margin-bottom: 20px;
+}
+.Touchs{
+    width: 220px;
+    height: 60px;
+    background-color: #177D72;
+    color: white;
+    border: none;
+    margin: 30px 30px;
+    border-radius: 10px;
+     box-shadow: 0 0 5px #177D72;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.leftdetail{
+    margin-left: -35px;
+    margin-top: 30px;
+    margin-bottom:50px;
+}
+.form{
+    margin-top:15%;
+}
+
+/* responsive */
+
+@media screen and (max-width: 480px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .contactbackground {
+    background-color:#c3e9e5;
+    height: auto;
+    width: 100%;
+  }
+
+  .arrowimage {
+    width: 15px;
+    height: 15px;
+  }
+
+  .home {
+    color: #05061D;
+    font-size: smaller;
+    font-style: normal;
+    margin-bottom: 80px;
+    justify-content: flex-start;
+  }
+
+  .leftdetail {
+    margin: 30px;
+  }
+
+  .notes {
+    width: 100%;
+    text-align: center;
+    font-size: small;
+  }
+
+  .container {
+    display: flex;       /* IMPORTANT */
+    flex-direction: column;
+  }
+
+  .info {
+    display: flex;       /* IMPORTANT */
+    flex-direction: column;
+    gap: 20px;
+    border: none;
+  }
+
+  .Touchs {               /* Fixed class name */
+    text-align: center;
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .contactbackground {
+    background-color: #c3e9e5;
+    height: auto;
+  }
+  .arrowimage {
+    width: 15px;
+    height: 15px;
+  }
+  .home {
+    color: #05061D;
+    font-size: smaller;
+    font-style: normal;
+    margin-bottom: 80px;
+    justify-content: flex-start;
+  }
+  .leftdetail {
+    margin: 30px;
+  }
+  .notes {
+    width: 100%;
+    text-align: center;
+    font-size: small;
+  }
+  .container {
+    display: flex;       /* IMPORTANT */
+    flex-direction: column;
+  }
+  .info {
+    display: flex;       /* IMPORTANT */
+    flex-direction: column;
+    gap: 20px;
+    border: none;
+  }
+.Touchs {               /* Fixed class name */
+    text-align: center;
+    font-size: large;
+  }
+.touch{
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 1024px) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.contactbackground {
+    background-color: #c3e9e5;
+    height: auto;
+  }
+
+  .arrowimage {
+    width: 15px;
+    height: 15px;
+  }
+  .home {
+    color: #05061D;
+    font-size: smaller;
+    font-style: normal;
+    margin-bottom: 80px;
+    justify-content: flex-start;
+  }
+  .leftdetail {
+    margin: 30px;
+  }
+  .notes {
+    width: 100%;
+    text-align: center;
+    font-size: large;
+  }
+  .container {
+    display: flex;       /* IMPORTANT */
+    flex-direction: column;
+  }
+  .touch{
+    text-align: center;
+}
+.info{
+    display: flex;
+    gap: 20px;
+    border: none;
+    margin: 20px 20px;
+    justify-content: center;
+}
+.Touchs{
+    width: 220px;
+    height: 60px;
+    background-color: #177D72;
+    color: white;
+    border: none;
+    margin: 30px 30px;
+    border-radius: 10px;
+     box-shadow: 0 0 5px #177D72;
+}
+}
+

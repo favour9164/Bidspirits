@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containerabout{
+    width:100%;
+    height:auto;
+    background: rgba(23, 125, 115, 0.206);
+}
+.card {
+  position: relative;
+  width: fit-content;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card img.top-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img.top-image {
+  transform: translateX(-50%) scale(1.05); 
+}
+.setion{
+    background-color: #177D72;
+    width: 500px;
+    padding: 10px 10px;
+    display:flex; 
+    color: white ;
+     gap:36%
+}
+.sectionall{
+    background: rgba(23, 125, 115, 0.206);
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 50px;
+    box-shadow: 1px 4px 18px rgba(23, 125, 115, 0.206);
+}
+
+.explore{
+  background: #F5A623;
+  width: 270px;
+  height: 50px;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius:10px;
+}
+.imagepostive{
+  width: 100%;
+  height: 90vh; 
+  object-fit: cover;
+}
+.imagepositive{
+    position: relative; 
+    width: 100%;
+}
+.imagepostiver{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white
+}
+.imagepostiverse{
+  max-width: 600px; 
+  font-size: 16px;
+}
+.Allnote{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+.notes{
+  margin:30px 0px;
+   padding:20px 0px;
+}
+.noters{
+  width:671px;
+}
+.noters{
+  width: 100%
+}
+.notres{
+  width: 100%;
+}
+.creatework{
+  width:400px;
+  height:330px;
+  margin-left: 70%;
+  margin-top:50px;
+  box-shadow:2px white;
+}
+.creating{
+  display:flex;
+   justify-content:space-evenly;
+    margin-left:'20px';
+}
+.display{
+  display:flex ;
+   gap:40% ; 
+   align-items:center; 
+   justify-content:flex-start
+}
+.ourcommunity{
+  width:500px;
+  padding:10px;
+   margin-left:15px
+}
+.equity{
+  font-size:19px ; 
+  margin-left:20px ;
+}
+.arrow{
+  width:24px; 
+  height:24px;
+}
+.arrowdown{
+  width:24px;
+   height:24px
+}
+.setion2{
+  background-color: #177D72;
+    width: 500px;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    display:flex; 
+    color: white ;
+    gap: 73%;
+}
+.ourcontact{
+  display:flex;
+  gap:10% ; 
+  margin-top:15%;
+  margin-bottom:5%;
+  align-items:center;
+  justify-content:center;
+}
+.industries{
+  margin:'50px'
+}
+
+@media screen and (max-width:768px){
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containerabout{
+    width:100%;
+    height: auto;
+    background: rgba(23, 125, 115, 0.206);
+}
+.imagepositive{
+  position: relative; 
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+}
+.imagepostive{
+  width: 100% ;
+  height: 90vh;
+  object-fit: cover;
+}
+.explore{
+  background: #F5A623;
+  width: 200px;
+  height: 50px;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius:10px;
+}
+.imagepostiverse{
+  max-width: 200px; 
+  font-size: 16px;
+  text-align: center;
+}
+.Allnote{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notes{
+  margin:30px 0x;
+   padding:40px 0px;
+}
+.noters{
+   width: 90%;
+   text-align: center;
+}
+.notres{
+  width:90%;
+  text-align: center;
+}
+.creatework{
+  width:350px;
+  height:200px;
+  margin-left: 1%;
+  margin-top:30px;
+  box-shadow:2px white;
+  border-radius: 10px;
+}
+.creating{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.display{
+   flex-direction: column;
+   gap:30% ; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.sectionall{
+    background: rgba(23, 125, 115, 0.206);
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 50px;
+    box-shadow: 1px 4px 18px rgba(23, 125, 115, 0.206);
+}
+.setion{
+    background-color: #177D72;
+    width: 300px;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    gap: 40px;
+}
+.ourcommunity{
+  width:300px;
+  padding:10px;
+  margin-left:10px
+}
+.equity{
+  font-size:16px ; 
+  margin-left:5px;
+}
+.arrow{
+  width:20px; 
+  height:20px;
+}
+.arrowdown{
+  width:20px;
+   height:20px
+}
+.ourcontact{
+  flex-direction: column;
+}
+.industries{
+  text-align: center;
+}
+.setion2{
+  background-color: #177D72;
+    width: 300px;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    gap: 60%;
+}
+
+}

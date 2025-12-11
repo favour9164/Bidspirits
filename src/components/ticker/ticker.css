@@ -1,0 +1,90 @@
+.ticker-wrap {
+  margin: 40px 0px;
+  position: fixed;
+  left: 18px;
+  right: 18px;
+  bottom: 0px;
+  z-index: 1200;
+  pointer-events: auto;
+}
+
+.ticker {
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 46px;
+  border: 2px solid rgba(246,167,37,0.08);
+}
+
+
+.ticker > .ticker-content {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 40px; /* spacing between repeats */
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+}
+
+/* container for the two content blocks, we animate this group as a whole */
+.ticker {
+  /* create a wide inner flex to accommodate both repeated contents side by side */
+  --scroll-duration: 18s; /* default; longer for longer text */
+}
+
+/* animation: slide left continuously */
+.ticker {
+  display: flex;
+  gap: 0;
+  animation: tickerScroll var(--scroll-duration) linear infinite;
+  align-items: center;
+}
+
+/* pause on hover */
+.ticker:hover {
+  animation-play-state: paused;
+  cursor: default;
+}
+
+/* small accent chip on left (optional) */
+.ticker::before {
+  content: "LIVE";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  background: #f6a725;
+  color: #122;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+/* animation keyframes: move whole ticker contents left by 50% (since we repeat contents twice) */
+@keyframes tickerScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* move by half so second repeat fills first */
+}
+
+/* responsive sizing */
+@media (max-width: 640px) {
+  .ticker {
+    height: 54px;
+    padding: 12px;
+  }
+
+  .ticker > .ticker-content {
+    font-size: 13px;
+  }
+
+  .ticker::before {
+    font-size: 11px;
+    padding: 3px 7px;
+  }
+}

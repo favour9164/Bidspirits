@@ -1,0 +1,24 @@
+.footer-links li {
+    padding-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.footer-links li:hover {
+    color: #00A37A;
+}
+
+.footer-container {
+  padding-left: 100px;
+  padding-right: 0px;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+a {
+    color: white;
+    text-decoration: none;
+ }
